@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>{{.Title}}</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap');
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Roboto', sans-serif;
+      background: #1e1e1e;
+      color: #f5f5f5;
+      padding: 2rem;
       max-width: 800px;
-      margin: 50px auto;
-      padding: 20px;
-      background: #f4f4f8;
-      color: #333;
-      line-height: 1.6;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin: auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      border-radius: 8px;
     }
 
     h1 {
-      color: #2c3e50;
+      font-family: 'Permanent Marker', cursive;
+      font-size: 3rem;
+      color: #ff4d00;
       text-align: center;
+      margin-bottom: 2rem;
+      text-shadow: 2px 2px #000;
     }
 
     p {
-      margin-bottom: 20px;
+      font-size: 1.2rem;
+      margin-bottom: 1.2rem;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 30px;
+    .options {
+      margin-top: 2rem;
     }
 
-    li a {
-      display: inline-block;
-      padding: 10px 15px;
-      background-color: #3498db;
-      color: white;
-      text-decoration: none;
+    .option a {
+      display: block;
+      background: #00bcd4;
+      color: #000;
+      padding: 0.8rem 1rem;
+      margin: 0.5rem 0;
       border-radius: 5px;
-      transition: background 0.3s ease;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
     }
 
-    li a:hover {
-      background-color: #2980b9;
+    .option a:hover {
+      background: #0097a7;
+      color: #fff;
+    }
+
+    .end {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      color: #ccc;
     }
   </style>
 </head>
@@ -56,14 +67,16 @@
     <p>{{.}}</p>
   {{end}}
 
-  {{if .Options}}
-    <ul>
+  <div class="options">
+    {{if .Options}}
       {{range .Options}}
-        <li><a href="/{{.Arc}}">{{.Text}}</a></li>
+        <div class="option">
+          <a href="/{{.Arc}}">{{.Text}}</a>
+        </div>
       {{end}}
-    </ul>
-  {{else}}
-    <p><strong>Fin de la aventura.</strong></p>
-  {{end}}
+    {{else}}
+      <div class="end">🎉 The End. Thanks for playing!</div>
+    {{end}}
+  </div>
 </body>
 </html>
