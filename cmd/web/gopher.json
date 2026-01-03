@@ -1,111 +1,112 @@
 {
   "intro": {
-    "title": "The Little Blue Gopher",
+    "title": "El Pequeño Gopher Azul",
     "story": [
-      "Once upon a time, long long ago, there was a little blue gopher. Our little blue friend wanted to go on an adventure, but he wasn't sure where to go. Will you go on an adventure with him?",
-      "One of his friends once recommended going to New York to make friends at this mysterious thing called \"GothamGo\". It is supposed to be a big event with free swag and if there is one thing gophers love it is free trinkets. Unfortunately, the gopher once heard a campfire story about some bad fellas named the Sticky Bandits who also live in New York. In the stories these guys would rob toy stores and terrorize young boys, and it sounded pretty scary.",
-      "On the other hand, he has always heard great things about Denver. Great ski slopes, a bad hockey team with cheap tickets, and he even heard they have a conference exclusively for gophers like himself. Maybe Denver would be a safer place to visit."
+      "Había una vez, hace mucho mucho tiempo, un pequeño gopher azul. Nuestro amiguito azul quería irse de aventura, pero no sabía bien a dónde. ¿Querés acompañarlo en su viaje?",
+      "Un amigo una vez le recomendó ir a Nueva York para hacer amigos en un misterioso evento llamado \"GothamGo\". Supuestamente es un evento grande con regalitos gratis, y si hay algo que le gusta a un gopher son los regalitos. Lamentablemente, una vez escuchó una historia alrededor de una fogata sobre unos tipos malos llamados los Sticky Bandits que también viven en Nueva York. En las historias, estos tipos robaban jugueterías y aterrorizaban a niños pequeños. Sonaba bastante aterrador.",
+      "Por otro lado, siempre escuchó cosas buenas de Denver. Excelentes pistas de esquí, un mal equipo de hockey pero con entradas baratas, e incluso oyó que hay una conferencia exclusivamente para gophers como él. Tal vez Denver sea un lugar más seguro para visitar."
     ],
     "options": [
       {
-        "text": "That story about the Sticky Bandits isn't real, it is from Home Alone 2! Let's head to New York.",
+        "text": "Esa historia de los Sticky Bandits no es real, ¡es de Mi Pobre Angelito 2! Vamos a Nueva York.",
         "arc": "new-york"
       },
       {
-        "text": "Gee, those bandits sound pretty real to me. Let's play it safe and try our luck in Denver.",
+        "text": "Mmm... suenan bastante reales. Mejor no arriesgar y probemos suerte en Denver.",
         "arc": "denver"
       }
     ]
   },
   "new-york": {
-    "title": "Visiting New York",
+    "title": "Visitando Nueva York",
     "story": [
-      "Upon arriving in New York you and your furry travel buddy first attempt to hail a cab. Unfortunately nobody wants to give a ride to someone with a \"pet\". They kept saying something about shedding, as if gophers shed.",
-      "Unwilling to accept defeat, you pull out your phone and request a ride using <undisclosed-app>. In a few short minutes a car pulls up and the driver helps you load your luggage. He doesn't seem thrilled about your travel companion but he doesn't say anything.",
-      "The ride to your hotel is fairly uneventful, with the exception of the driver droning on and on about how he barely breaks even driving around the city and how tips are necessary to make a living. After a while it gets pretty old so you slip in some earbuds and listen to your music.",
-      "After arriving at your hotel you check in and walk to the conference center where GothamGo is being held. The friendly man at the desk helped you get your badge and you hurry in to take a seat.",
-      "As you head down the aisle you notice a strange man on stage with a mask, cape, and poorly drawn abs on his stomach. Next to him is a man in a... is that a fox outfit? What are these two doing? And what have you gotten yourself into?"
+      "Al llegar a Nueva York, vos y tu peludo compañero intentan pedir un taxi. Pero nadie quiere llevar a alguien con una 'mascota'. Todos dicen algo de que deja pelos.",
+      "Negándote a perder, sacás el teléfono y pedís un auto por una app (no diremos cuál). En minutos llega un auto. El conductor no está encantado con tu gopher, pero no dice nada.",
+      "El viaje al hotel es bastante tranquilo, salvo que el conductor no para de hablar sobre cómo apenas gana algo y que necesita propinas para sobrevivir. Después de un rato, ponés tus auriculares y te enfocás en tu música.",
+      "Al llegar al hotel, te registrás y vas al centro de conferencias donde se celebra GothamGo. El hombre en la entrada te da tu credencial y corrés a tomar asiento.",
+      "Mientras caminás por el pasillo, notás un tipo en el escenario con una máscara, capa y abdominales mal dibujados en la panza. Junto a él hay otro vestido de... ¿zorro? ¿Qué están haciendo estos tipos? ¿En qué te metiste?"
     ],
     "options": [
       {
-        "text": "This is getting too weird for me. Let's bail and head back home.",
+        "text": "Esto ya es demasiado raro. Vámonos a casa.",
         "arc": "home"
       },
       {
-        "text": "Maybe people just dress funny in the big city. Grab a a seat and see what happens.",
+        "text": "Capaz que así se visten en la gran ciudad. Tomemos asiento a ver qué pasa.",
         "arc": "debate"
       }
     ]
   },
   "debate": {
-    "title": "The Great Debate",
+    "title": "El Gran Debate",
     "story": [
-      "After a bit everyone settles down the two people on stage begin having a debate. You don't recall too many specifics, but for some reason you have a feeling you are supposed to pick sides."
+      "Después de un rato, todos se calman y los dos personajes en el escenario empiezan a debatir. No recordás mucho lo que dijeron, pero por alguna razón sentís que deberías elegir un bando."
     ],
     "options": [
       {
-        "text": "Clearly that man in the fox outfit was the winner.",
+        "text": "Claramente ganó el del disfraz de zorro.",
         "arc": "sean-kelly"
       },
       {
-        "text": "I don't think those fake abs would help much in a feat of strength, but our caped friend clearly won this bout. Let's go congratulate him.",
+        "text": "Esos abdominales falsos no ayudan mucho en una pelea, pero nuestro amigo con capa claramente ganó. ¡Vamos a felicitarlo!",
         "arc": "mark-bates"
       },
       {
-        "text": "Slip out the back before anyone asks us to pick a side.",
+        "text": "Nos escabullimos por atrás antes de que alguien nos pida elegir un lado.",
         "arc": "home"
       }
     ]
   },
   "sean-kelly": {
-    "title": "Exit Stage Left",
+    "title": "Salida por Izquierda",
     "story": [
-      "As you begin walking up to the fox-man you hear him introduce himself as Sean Kelly. While waiting in line you decide to do a little research to see what types of work Sean is into.",
-      "A few clicks later and you drop your phone in horror. This guy's online handle is \"StabbyCutyou\". The stories about New York being dangerous were true!",
-      "Without a thought you grab your gopher buddy and head for the door. \"I'll explain when we get to the hotel\" you tell him.",
-      "After arriving at your hotel you both decide that you have had enough adventure. First thing tomorrow morning you are heading home."
+      "Al acercarte al hombre-zorro, lo escuchás presentarse como Sean Kelly. Mientras hacés fila, decidís buscarlo en Internet para ver a qué se dedica.",
+      "Unos clics después, dejás caer el celular del susto. Su usuario en línea es \"StabbyCutyou\". ¡Las historias de que Nueva York era peligrosa eran ciertas!",
+      "Sin pensarlo, agarrás a tu gopher y corrés hacia la puerta. “Te explico cuando lleguemos al hotel”, le decís.",
+      "Al llegar al hotel, ambos deciden que ya tuvieron suficiente aventura. A la mañana siguiente vuelven a casa."
     ],
     "options": [
       {
-        "text": "You change your flight to leave early and head to the airport in the morning.",
+        "text": "Cambiás el vuelo para volver temprano y vas al aeropuerto por la mañana.",
         "arc": "home"
       }
     ]
   },
   "mark-bates": {
-    "title": "Costume Time",
+    "title": "Hora de Disfrazarse",
     "story": [
-      "After talking with the wannabe superhero for a while you come to learn that his name is Mark Bates, and aside from his costume obsession he seems like a nice enough guy.",
-      "It turns our Mark has been working on this project called Buffalo and he is desperately looking for a mascot. He even purchased a little buffalo outfit, but it is too small for him.",
-      "After looking over the costume you are certain it won't fit you, but as luck would have it your gopher companion fit in it perfectly. Mark quickly snapped a few photos, mumbling something about Ashley McNamara designing the best buffalo costume ever.",
-      "Many great times are had with Mark and pals, but you eventually find yourself on the last night of your stay."
+      "Después de charlar un rato con el supuesto superhéroe, descubrís que se llama Mark Bates. Aparte de su obsesión con los disfraces, parece buen tipo.",
+      "Resulta que Mark está trabajando en un proyecto llamado Buffalo y necesita desesperadamente una mascota. Incluso compró un disfraz de búfalo, pero le queda chico.",
+      "Después de ver el disfraz, estás seguro de que no te entra a vos... pero por suerte a tu gopher le queda perfecto. Mark saca unas fotos diciendo algo de que Ashley McNamara diseñó el mejor disfraz de búfalo del mundo.",
+      "Pasás buenos momentos con Mark y sus amigos, pero eventualmente llega la última noche de tu viaje."
     ],
     "options": [
       {
-        "text": "Pack your bags and head to bed. We have a long flight in the morning.",
+        "text": "Hacés las valijas y te vas a dormir. Mañana tenés un vuelo largo.",
         "arc": "home"
       }
     ]
   },
   "denver": {
-    "title": "Hockey and Ski Slopes",
+    "title": "Hockey y Pistas de Esquí",
     "story": [
-      "You arrive in Denver and start your trip by attending a hockey game. The Avalanche had a rough season last year, but your gopher buddy is hopeful that they will do better this year. He also explains that he is tired of hearing about \"Two time Stanley Cup champion Phil Kessel.\" You suspect that he is still a little salty about the Penguins beating the San Jose Sharks in the Stanley Cup, but you decide to give him a break.",
-      "The next day you head to the slopes and blaze a few trails. You can definitely see why Denver is called the \"Mile-High City\". Gorgeous mountain scenery doesn't come close to describing it.",
-      "You consider checking out this GopherCon you have heard so much about, but a quick check on their website has your gopher buddy vetoing it. It turns out he has a strict, \"No Space Walks\" policy, and refuses to believe that it is just a graphic on the website.",
-      "The week quickly flies by and before you know it you are packing up to head home."
+      "Llegás a Denver y comenzás el viaje yendo a un partido de hockey. Los Avalanche vienen de una mala temporada, pero tu gopher tiene fe en que este año les va mejor. Dice estar cansado de escuchar sobre 'Phil Kessel, campeón de la Stanley Cup'.",
+      "Sospechás que todavía está dolido porque los Penguins vencieron a los Sharks. Lo dejás pasar.",
+      "Al día siguiente van a esquiar. Entendés por qué Denver se llama 'La ciudad a una milla de altura'. El paisaje montañoso es simplemente hermoso.",
+      "Considerás visitar la GopherCon, pero al ver el sitio web tu gopher dice que no: tiene una política estricta de 'No caminatas espaciales', y no cree que eso sea solo un gráfico del sitio.",
+      "La semana pasa volando y pronto ya estás haciendo las valijas para volver a casa."
     ],
     "options": [
       {
-        "text": "Pack your bags and head to bed. We have a long flight in the morning.",
+        "text": "Hacés las valijas y te vas a dormir. Mañana hay un vuelo largo.",
         "arc": "home"
       }
     ]
   },
   "home": {
-    "title": "Home Sweet Home",
+    "title": "Hogar Dulce Hogar",
     "story": [
-      "Your little gopher buddy thanks you for taking him on an adventure. Perhaps next year you can look into travelling abroad - you have both heard that gophers are all the rage in China."
+      "Tu pequeño amigo gopher te agradece por llevarlo de aventura. Tal vez el año que viene puedan viajar al exterior... escucharon que los gophers son muy populares en China."
     ],
     "options": []
   }
