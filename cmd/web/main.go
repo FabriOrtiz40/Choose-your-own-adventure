@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"strings"
 )
 
 func main() {
@@ -29,3 +30,11 @@ func main() {
 	http.ListenAndServe(":8080", story.NewHandler(s))
 
 }
+
+func pathFn(r *http.Request) string {
+	path := strings.TrimSpace(r.URL.Path)
+	path = strings.TrimPrefix(path, "/story/")
+
+	return path
+}
+
