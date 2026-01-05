@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"html/template"
 	"io"
+	"log"
 	"net/http"
 	"strings"
-	"log"
 )
 
 type Story map[string]Chapter
@@ -22,33 +22,43 @@ type handler struct {
 	t *template.Template
 }
 
+type HandlerOption func(*handler)
 
-
-func NewHandler(s Story, t *template.Template) http.Handler {
-	if t == nil {
-		t = tpl // tpl es tu template por defecto ya parseado
+func WithTemplate(t *template.Template) HandlerOption {
+	return func(h *handler) {
+		if t != nil {
+			h.t = t
+		}
 	}
-	return handler{s, t}
 }
 
+func NewHandler(s Story, opts ...HandlerOption) http.Handler {
+	h := handler{s: s, t: tpl}
+
+	for _, opt := range opts {
+		opt(&h)
+	}
+
+	return h
+}
 
 func (h handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-    path := strings.TrimSpace(r.URL.Path)
-    if path == "" || path == "/" {
-        path = "/intro"
-    }
-    path = path[1:]
+	path := strings.TrimSpace(r.URL.Path)
+	if path == "" || path == "/" {
+		path = "/intro"
+	}
+	path = path[1:]
 
-    if chapter, ok := h.s[path]; ok {
-        err := tpl.Execute(w, chapter)
-        if err != nil {
-            log.Printf("Template error: %v", err)
-            http.Error(w, "Something went wrong...", http.StatusInternalServerError)
-        }
-        return
-    }
+	if chapter, ok := h.s[path]; ok {
+		err := tpl.Execute(w, chapter)
+		if err != nil {
+			log.Printf("Template error: %v", err)
+			http.Error(w, "Something went wrong...", http.StatusInternalServerError)
+		}
+		return
+	}
 
-    http.Error(w, "Chapter not found.", http.StatusNotFound)
+	http.Error(w, "Chapter not found.", http.StatusNotFound)
 }
 
 func JsonStory(r io.Reader) (Story, error) {

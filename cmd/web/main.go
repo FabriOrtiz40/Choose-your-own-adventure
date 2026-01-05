@@ -26,5 +26,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	http.ListenAndServe(":8080", story.NewHandler(s, nil))
+	http.ListenAndServe(":8080", story.NewHandler(s))
+
 }
